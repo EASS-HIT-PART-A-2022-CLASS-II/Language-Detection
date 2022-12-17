@@ -1,2 +1,5 @@
-# ML_Testing_eden
-machine learning backend code
+#TODO LIST:
+
+
+add mongodb for each use.
+add front end ui.
