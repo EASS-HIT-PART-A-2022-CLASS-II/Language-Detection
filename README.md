@@ -34,3 +34,4 @@ inorder to get prediction for the input
 #future plans:
 * 1) to add database to log each prediction. (mongodb)
 * 2) to add ui to the app.
+* 3) to add tests.
