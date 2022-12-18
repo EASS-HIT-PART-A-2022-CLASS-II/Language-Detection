@@ -35,3 +35,10 @@ inorder to get prediction for the input
 * 1) to add database to log each prediction. (mongodb)
 * 2) to add ui to the app.
 * 3) to add tests.
+
+#how to deploy
+Some basic Git commands are:
+```
+docker build -t [enter some name to the file]
+docker run -p  80:80 [the previous name]
+```
