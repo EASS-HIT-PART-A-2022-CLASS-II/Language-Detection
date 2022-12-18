@@ -31,12 +31,12 @@ send a json with the following format:
 inorder to get prediction for the input
 ![image](https://user-images.githubusercontent.com/77243045/208263481-2f660833-8f06-48b2-88c6-593b77f0a607.png)
 
-#future plans:
+# future plans:
 * 1) to add database to log each prediction. (mongodb)
 * 2) to add ui to the app.
 * 3) to add tests.
 
-#how to deploy
+# how to deploy
 Some basic Git commands are:
 ```
 docker build -t [enter some name to the file]
