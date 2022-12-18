@@ -39,7 +39,7 @@ inorder to get prediction for the input
 * 3) to add tests.
 
 # how to deploy
-Some basic Git commands are:
+ deployment:
 ```
 docker build -t [enter some name to the file]
 docker run -p  80:80 [the previous name]
