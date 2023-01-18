@@ -29,6 +29,9 @@ https://fastapi-test-backend.herokuapp.com/predict
 
 send a json with the following format:
 inorder to get prediction for the input
+
+# ui update 
+![img.png](img.png)
 ![image](https://user-images.githubusercontent.com/77243045/208263481-2f660833-8f06-48b2-88c6-593b77f0a607.png)
 # another example
 ![img.png](Tools/img.png)
