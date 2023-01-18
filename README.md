@@ -35,6 +35,7 @@ inorder to get prediction for the input
 
 # future plans:
 * 1) to add ui to the app.
+* 2) make the ui work also on the deployment
 
 
 # how to deploy
