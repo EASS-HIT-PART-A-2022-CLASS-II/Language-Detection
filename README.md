@@ -34,9 +34,8 @@ inorder to get prediction for the input
 ![img.png](Tools/img.png)
 
 # future plans:
-* 1) to add database to log each prediction. (mongodb)
-* 2) to add ui to the app.
-* 3) to add tests.
+* 1) to add ui to the app.
+
 
 # how to deploy
  deployment:
