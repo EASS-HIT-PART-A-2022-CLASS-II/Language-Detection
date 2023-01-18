@@ -1,38 +1,19 @@
-import streamlit as st
-import json
 import requests
-
-
-@st.cache
-def clear_text():
-    return ""
-
+import streamlit as st
 
 st.title("Language Detection app 🚀")
-st.write("please enter an text to the text boxes")
+st.write("Language-Detection is a tool for inorder to "
+         "ideanfy what languease is the text . It checks strings and texts for now its based "
+         "on https://www.kaggle.com/datasets/basilb2s/language-detection dataset "
+         "and supports 17 Languages")
 
-def clear_form():
-    st.session_state["Text_1"] = ""
-    st.session_state["Text_2"] = ""
+text_input = st.text_area("Enter a text:")
 
-with st.form("myform"):
-    f1, f2 = st.columns([1, 1])
-    with f1:
-        st.text_area("Text_1", key="Text_1")
-    with f2:
-        st.text_area("Text_2", key="Text_2")
-    f3, f4 = st.columns([1, 1])
-    with f3:
-        submit = st.form_submit_button(label="Submit")
-    with f4:
-        clear = st.form_submit_button(label="Clear", on_click=clear_form)
-
-if submit:
-    st.write('Submitted')
-
-if clear:
-    st.write('Cleared')
-
-st.write(st.session_state.Text_1)
-st.write(st.session_state.Text_2)
-
+if st.button('Send API request'):
+    payload = {"text": text_input}
+    response = requests.post('http://0.0.0.0/predict', json=payload)
+    if response.status_code == 200:
+        data = response.json()
+        st.write(data)
+    else:
+        st.write("Error occured, please check the input")
