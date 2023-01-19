@@ -34,13 +34,23 @@ inorder to get prediction for the input
 # more examples
 ![img_2.png](img_2.png)
 # future plans:
-* 1) to add ui to the app.
-* 2) make the ui work also on the deployment
-
+- [x] Create backend using FASTAPI 
+- [x] Connect the ML model to the FASTAPI framework
+- [x] Added Dockerfile to the backend
+- [x] Create frontend using the Streamlit
+- [x] Added Dockerfile to the frontend
+- [x] Integrate between frontend and backend
+- [ ] to add docker compose 
+- [ ] to deploy the project in heroku
 
 # how to deploy
- deployment:
+ deployment for the Backend
 ```
-docker build -t [enter some name to the file]
+docker build -t [enter some name to the file] .
 docker run -p  80:80 [the previous name]
+```
+deployment for the Frontend
+```
+docker build -t [enter some name to the file] .
+docker run -p  8501:8501 [the previous name]
 ```
