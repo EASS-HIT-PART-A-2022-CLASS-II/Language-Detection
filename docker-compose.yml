@@ -1,0 +1,25 @@
+version: '3'
+services:
+  db:
+    build:
+      context: ./Database
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+  backend:
+    build:
+      context: ./BackEnd
+    ports:
+      - "80:80"
+    links:
+      - db
+  frontend:
+    build:
+      context: ./FrontEnd
+    ports:
+      - "8501:8501"
+    links:
+      - db
+    environment:
+      PGHOST: db
