@@ -2,11 +2,17 @@ import requests
 import streamlit as st
 import socket
 
-#getting ip
-hostname = socket.gethostname()
-ipaddress = socket.gethostbyname(hostname)
-ipaddress = "192.168.2.143"
-url = f"http://{ipaddress}/predict"
+
+
+def get_host_ip():
+    try:
+        host_ip = socket.gethostbyname("host.docker.internal")
+        return host_ip
+    except:
+        return "127.0.0.1"
+
+url = f"http://{get_host_ip()}/predict"
+
 
 st.title("Language Detection app 🚀")
 st.write("Language-Detection is a tool for inorder to "
