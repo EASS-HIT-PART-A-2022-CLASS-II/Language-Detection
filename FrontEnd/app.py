@@ -3,7 +3,6 @@ import streamlit as st
 import socket
 import psycopg2
 import json
-import docker
 
 def get_host_ip():
     try:
@@ -15,17 +14,10 @@ def get_host_ip():
 
 url = f"http://{get_host_ip()}/predict"
 
-#code
-#client = docker.DockerClient(base_url='unix://var/run/docker.sock')
-#container = client.containers.get("some-postgres")
-#container_ip = container.attrs['NetworkSettings']['IPAddress']
-#print("The IP address of the container is: ", container_ip)
-
 
 # Connect to the PostgreSQL database
 conn = psycopg2.connect(
-    host="172.17.0.2",
-    #host=container_ip,
+    host="db",
     port="5432",
     user="postgres",
     password="mysecretpassword",

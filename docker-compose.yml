@@ -7,13 +7,15 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: mysecretpassword
+    networks:
+      - Language-Detection
   backend:
     build:
       context: ./BackEnd
     ports:
       - "80:80"
-    links:
-      - db
+    networks:
+      - Language-Detection
   frontend:
     build:
       context: ./FrontEnd
@@ -23,3 +25,12 @@ services:
       - db
     environment:
       PGHOST: db
+    networks:
+      - Language-Detection
+    depends_on:
+      - db
+      - backend
+
+networks:
+  Language-Detection:
+    driver: bridge
