@@ -30,9 +30,9 @@ send a json with the following format:
 inorder to get prediction for the input
 
 # ui update 
-![img_1.png](img_1.png)
+![img_1.png](Tools/img_1.png)
 # more examples
-![img_2.png](img_2.png)
+![img_2.png](Tools/img_2.png)
 # future plans:
 - [x] Create backend using FASTAPI 
 - [x] Connect the ML model to the FASTAPI framework
