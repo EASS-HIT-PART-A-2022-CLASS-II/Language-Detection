@@ -32,18 +32,22 @@ Before you begin, make sure you have the following installed on your machine:
 # Running the App
 1. Clone the repository to your local machine:
 ```
-git clone https://github.com/[YOUR_GITHUB_USERNAME]/LanguageDetection.git
+git clone https://github.com/EASS-HIT-PART-A-2022-CLASS-II/Language-Detection.git
 ```
 2. Navigate to the repository directory:
 ```
 cd LanguageDetection
 ```
-3. Build and start the containers:
+3. Navigate to the production branch:
+```
+git checkout production
+```
+4. Build and start the containers:
 ```
 docker-compose up --build
 ```
-4. Access the Streamlit frontend in your browser at http://localhost:8501
-5. inorder to stop the app:
+5. Access the Streamlit frontend in your browser at http://localhost:8501
+6. inorder to stop the app:
 ```
 docker-compose down
 ```
@@ -124,14 +128,14 @@ pytest
 - [x] Develop frontend using Streamlit
 - [x] Create Dockerfile for frontend
 - [x] Connect frontend and backend
-- [x] Add PostgreSQL database service
+- [x] Add PostgresSQL database service
 - [x] Add Docker Compose configuration file
 - [x] Add tests
 
 # Acknowledgements
 1. **FastAPI**
 2. **Streamlit**
-3. **PostgreSQL**
+3. **PostgresSQL**
 
 # License
 This project is licensed under the MIT License.
