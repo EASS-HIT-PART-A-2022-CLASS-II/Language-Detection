@@ -1,5 +1,4 @@
-#FrontEnd/Dockerfile
-
+# Dockerfile for Frontend service
 FROM python:3.9
 
 COPY requirements.txt app/requirements.txt
@@ -13,6 +12,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install the Python packages from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install pytest
 
 # Set the environment variable for the PostgreSQL host
 ENV PGHOST=postgres
