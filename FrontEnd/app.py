@@ -35,10 +35,8 @@ cursor.execute("""
 conn.commit()
 
 st.title("Language Detection app 🚀")
-st.write("Language-Detection is a tool for inorder to "
-         "ideanfy what languease is the text . It checks strings and texts for now its based "
-         "on https://www.kaggle.com/datasets/basilb2s/language-detection dataset "
-         "and supports 17 Languages")
+st.write("Language Detection is a tool designed to identify the language of text. Currently, it uses the "
+         "https://www.kaggle.com/datasets/basilb2s/language-detection dataset to check for 17 supported languages.")
 
 text_input = st.text_area("Enter a text:")
 
