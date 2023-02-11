@@ -141,5 +141,4 @@ pytest
 This project is licensed under the MIT License.
 
 # Additional Information
-This project was created for the EASS-HIT-PART-A-2022-CLASS-II course
-by Eden Sheiko.
+The development of this project was initiated for the EASS-HIT-PART-A-2022-CLASS-II course by Eden Sheiko
