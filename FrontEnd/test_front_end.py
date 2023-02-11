@@ -25,7 +25,7 @@ def test_api_request():
 
     text, result_str = result
     result = json.loads(result_str)
-    assert text == "test"
+    assert text == "Hello, World"
     assert result == data
 
     conn.close()
