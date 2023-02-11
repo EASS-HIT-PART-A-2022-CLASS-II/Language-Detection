@@ -117,9 +117,9 @@ just enter the following statement in the root directory:
 ```
 pytest
 ```
-# ui update 
+# Revamped User Interface
 ![img_1.png](Tools/img_1.png)
-# more examples
+# Additional Example Screenshots
 ![img_2.png](Tools/img_2.png)
 # Project Roadmap:
 - [x] Develop backend using FASTAPI
